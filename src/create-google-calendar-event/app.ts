@@ -8,7 +8,7 @@ export default defineOperationApp({
   icon: "calendar_add_on",
   description:
     "Utility for Google Calendar API for adding events in the calendar",
-  overview: ({ summary, location, startTimestamp, endTimestamp }) => {
+  overview: ({ summary, location, start, end }) => {
     return [
       {
         label: "Summary",
@@ -20,7 +20,7 @@ export default defineOperationApp({
       },
       {
         label: "Schedule",
-        text: coalesceDateRange(startTimestamp, endTimestamp),
+        text: coalesceDateRange(start, end),
       },
     ];
   },
@@ -93,7 +93,7 @@ export default defineOperationApp({
     },
     {
       field: "start",
-      name: "Start Date",
+      name: "Start Date & Time",
       type: "dateTime",
       meta: {
         width: "half-left",
@@ -102,7 +102,7 @@ export default defineOperationApp({
     },
     {
       field: "end",
-      name: "End Date",
+      name: "End Date & Time",
       type: "dateTime",
       meta: {
         width: "half-right",
