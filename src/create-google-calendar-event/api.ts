@@ -1,12 +1,7 @@
-import { defineOperationApi } from '@directus/extensions-sdk';
+import { defineOperationApi } from "@directus/extensions-sdk";
+import { CreateGoogleCalendarEventHandler } from "../lib/operations-api";
 
-type Options = {
-	text: string;
-};
-
-export default defineOperationApi<Options>({
-	id: 'custom',
-	handler: ({ text }) => {
-		console.log(text);
-	},
+export default defineOperationApi({
+  id: "create-google-calendar-event",
+  handler: CreateGoogleCalendarEventHandler,
 });
