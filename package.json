@@ -34,10 +34,12 @@
     "build": "directus-extension build",
     "dev": "directus-extension build -w --no-minify",
     "link": "directus-extension link",
-    "add": "directus-extension add"
+    "add": "directus-extension add",
+    "auth": "node ./scripts/oauth2.cjs"
   },
   "devDependencies": {
     "@directus/extensions-sdk": "13.0.1",
+    "@google-cloud/local-auth": "^3.0.1",
     "@types/node": "^22.13.1",
     "typescript": "^5.7.3",
     "vitest": "^3.0.5",
