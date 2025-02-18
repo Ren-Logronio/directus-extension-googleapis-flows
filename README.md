@@ -1,5 +1,12 @@
 # Directus Extension Googleapis Flows
 
+## Roadmap
+- Upload to Google Drive Operation
+- Google Drive <--> Directus File Library Operations
+- Send/Read/Remove Gmail Operation
+- Generate Google Form Operation
+- Get Google Form Responses Operation
+
 ## Prerequisites
 
 - **General**
