@@ -49,6 +49,10 @@
 **[4. Generating OAuth2 Refresh token](https://developers.google.com/identity/protocols/oauth2#1.-obtain-oauth-2.0-credentials-from-the-dynamic_data.setvar.console_name.)**
 
 > You can run `npm run auth` to get your refresh token from ***token.json***, given that you had provided ***credentials.json*** to the ***scripts*** directory.
+>
+> your credentials.json is found on **API's & Services > Credentials > OAuth2 2.0 Client Ids > Table Actions > Download > Download JSON**
+>
+> rename as ***credentials.json*** and place under the ***scripts*** directory
 
 **5. Add Environment Variables to your directus project**
 
@@ -61,9 +65,9 @@ EXTENSIONS_GOOGLE_OAUTH_REFRESH_TOKEN=
 EXTENSIONS_GOOGLE_OAUTH_TOKEN_PATH=
 ```
 
-Once directus is up and running, go to Settings > Extensions, and check if extension directus-extension-googleapis-flows is found.
+Once directus is up and running, go to **Settings > Extensions**, and check if extension ***directus-extension-googleapis-flows*** is found.
 
-## Sample Operation Options
+## Sample *Create GCalendar Event* Operation Options
 
 ```json
 {
@@ -79,7 +83,7 @@ Once directus is up and running, go to Settings > Extensions, and check if exten
 }
 ```
 
-## Sample Operation Payload
+## Sample *Create GCalendar Event* Operation Payload
 
 ```json
 {
