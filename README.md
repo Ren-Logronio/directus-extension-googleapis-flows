@@ -1,13 +1,6 @@
 # Directus Extension Googleapis Flows
 
-## Roadmap
-- Upload to Google Drive Operation
-- Google Drive <--> Directus File Library Operations
-- Send/Read/Remove Gmail Operation
-- Generate Google Form Operation
-- Get Google Form Responses Operation
-
-## Prerequisites
+# Prerequisites
 
 - **General**
   - google calendar api enabled
@@ -26,10 +19,10 @@
 
 **1. Clone Repository to extension directory**
 
- `git clone https://github.com/Ren-Logronio/directus-extension-googleapis-flows.git `
-
+`cd <directus extension directory>`
+`git clone https://github.com/Ren-Logronio/directus-extension-googleapis-flows.git`
+`cd directus-extension-googleapis-flows`
 `npm i`
-
 `npm run build`
 
 **[2. Set up google Oauth2](https://support.google.com/cloud/answer/6158849?hl=en)**
@@ -53,15 +46,15 @@
      2. Read and write calendar
      3. Read and write calendar events
 
-**[4. Generating OAuth2 Refresh token](https://developers.google.com/identity/protocols/oauth2#1.-obtain-oauth-2.0-credentials-from-the-dynamic_data.setvar.console_name.)**
+**[4. Generating OAuth2 Refresh token](https://developers.google.com/identity/protocols/oauth2#1.-obtain-oauth-2.0-credentials-from-the-dynamic_data.setvar.console_name.) **
 
-> You can run `npm run auth` to get your refresh token from ***token.json***, given that you had provided ***credentials.json*** to the ***scripts*** directory.
+> Run `npm run auth` to get the refresh token from ***token.json***, given that ***credentials.json*** is provided in the ***scripts*** directory.
 >
-> your credentials.json is found on **API's & Services > Credentials > OAuth2 2.0 Client Ids > Table Actions > Download > Download JSON**
+> credentials.json is found on **API's & Services > Credentials > OAuth2 2.0 Client Ids > Table Actions > Download > Download JSON**
 >
-> rename as ***credentials.json*** and place under the ***scripts*** directory
+> rename as ***credentials.json*** and place under the ***[source of directus-extension-googleapis-flows]/scripts*** directory
 
-**5. Add Environment Variables to your directus project**
+**5. Add Environment Variables to a directus project**
 
 ```
 EXTENSIONS_GOOGLE_AUTH_MODE=oauth
